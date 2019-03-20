@@ -7,8 +7,7 @@ import  threading,time
 from src.ServiceTask.VoiceService import VoiceTask
 from src.ServiceTask.TempratureMonitorService import tempratureDiffMonit
 
-VoiceText= ['系统已上线，开始监测锅炉壁温....','进入系统了',
-               '退出系统了']
+VoiceText= ['系统已上线，开始监测锅炉壁温....',]
 
 
 def test(vo):

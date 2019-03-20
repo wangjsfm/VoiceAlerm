@@ -5,7 +5,7 @@ date: '2019/3/20 10:25'
 
 from src.Dao.VoiceEngine import  VoiceInitClass
 import time
-
+from src.Config.AppParammeters import VoiceCyclInter
 # from src.MainTask.main import VoiceText
 
 
@@ -24,7 +24,7 @@ def VoiceTask(voiceText):
 
                 engine.runAndWait()  # 将报警信息加入 报警引擎
 
-            time.sleep(5) #扫描间隔 1S
+            time.sleep(VoiceCyclInter) #扫描间隔 1S
 
     except:
         engine.stop()

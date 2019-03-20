@@ -68,19 +68,37 @@ def tempreatureDiffHandle(dataList,areaTage,diffThresholdValuet,unit):
 
     # 区域最大，最小差值大于定值，将数据更新（新建）至redis
     if  diffValue >  diffThresholdValuet:
+
         #存入redis缓存
-        alermRedisHandle(areaTage,diffValue,maxValue,minvalue )
+        # alermRedisHandle(areaTage,diffValue,maxValue,minvalue )
+
         #生成报警信息
-        alermTextContent = unit+str(maxValue[2])+',与'+str(minvalue[2])+',偏差'+str(diffValue)+'度'
-        print(alermTextContent)
+        alermTextContent = unit+str(maxValue[2])+','+str(minvalue[2])+',偏差'+str(diffValue)+'度'
+        # print(alermTextContent)
 
     #无报警，删除对于区域缓存数据，并将缓存数据存入数据库
     else:
         #删除缓存及持久化
-        removeCatch(areaTage)
+        # removeCatch(areaTage)
+        pass
 
     #返回报警信息
     return  alermTextContent
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
