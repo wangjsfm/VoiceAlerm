@@ -6,6 +6,7 @@ date: '2019/3/20 10:25'
 from src.Dao.VoiceEngine import  VoiceInitClass
 import time
 
+# from src.MainTask.main import VoiceText
 
 
 def VoiceTask(voiceText):
