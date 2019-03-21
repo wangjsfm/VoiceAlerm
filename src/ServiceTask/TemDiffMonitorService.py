@@ -8,7 +8,7 @@ import  pandas as pd
 from  src.Config.AppParammeters import OpcApiUrl,UpperWaterWall_Area_1,\
     TeampratureDiffThrosh,LowerWaterWall_Area_1,MonitorCyclTime
 
-from src.Dao.TempratureDao import tempreatureDiffHandle
+from src.Dao.TemDiffDao import tempreatureDiffHandle
 
 
 

@@ -69,10 +69,10 @@ def TempModelInit():
 #
 # if __name__ == '__main__':
 #
-#     area = 'highTemperatureReheaterModle'
-#     x = ModelData.x12
-#     y = ModelData.y12
-#     title = ModelData.title12
+#     area = 'highTemperatureSuperheaterModle45'
+#     x = ModelData.x9
+#     y = ModelData.y9
+#     title = ModelData.title9
 #
 #     modelMap = TempModelInit()
 #     yList = []
@@ -91,5 +91,5 @@ def TempModelInit():
 #     plt.plot(xList, yList)
 #
 #     plt.show()
-
-
+#
+#

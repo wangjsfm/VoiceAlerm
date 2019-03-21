@@ -5,8 +5,10 @@ date: '2019/3/20 11:02'
 
 OpcApiUrl = 'http://localhost:1229/api/list'
 
-#壁温判断程序扫描周期
-MonitorCyclTime = 5
+#温差判断程序扫描周期
+MonitorCyclTime = 4
+#壁温监控程序扫描周期
+TemprCyclTime = 40
 #语音报警检测间隔
 VoiceCyclInter = 1
 
